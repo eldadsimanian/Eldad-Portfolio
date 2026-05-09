@@ -1,0 +1,224 @@
+/* ===== 1. General & Body Setup ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121416;
+  color: #f5f7fa;
+  font-family: "Poppins", system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding-top: 90px;
+  overflow-x: hidden;
+}
+
+#bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+nav, main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== 2. Navbar & Buttons ===== */
+.custom-navbar { 
+  background-color: rgba(18, 20, 22, 0.95); 
+  backdrop-filter: blur(10px); 
+}
+
+.navbar .navbar-brand {
+  color: #f5f7fa;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand:hover { color: #20e3b2; transform: scale(1.05); }
+
+.navbar .nav-link {
+  color: rgba(245, 247, 250, 0.75);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active { 
+  color: #20e3b2; 
+  transform: scale(1.08); 
+}
+
+.btn-accent {
+  background-color: #20e3b2;
+  border: none;
+  color: #0b0f0e;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover { filter: brightness(1.1); transform: translateY(-2px); }
+
+/* ===== 3. Hero Section ===== */
+.hero { min-height: calc(100vh - 90px); padding: 32px 0; }
+.hero-text { max-width: 520px; }
+.hero-kicker { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245, 247, 250, 0.6); margin-bottom: 14px; }
+.hero-title { font-size: clamp(48px, 6vw, 86px); line-height: 0.95; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px; }
+.hero-role { color: #20e3b2; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 16px; margin-bottom: 14px; }
+.hero-sub { color: rgba(245, 247, 250, 0.75); font-size: 16px; max-width: 52ch; margin-bottom: 22px; }
+
+.hero-visual { display: flex; justify-content: flex-end; }
+.hero-img { width: min(450px, 100%); aspect-ratio: 1 / 1; border-radius: 50%; object-fit: cover; border: 4px solid rgba(32, 227, 178, 0.2); }
+
+.hero-links { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-btn { 
+    background: #20e3b2; color: #0b0f0e; text-decoration: none; 
+    padding: 10px 24px; border-radius: 999px; font-weight: 700; 
+    font-size: 14px; transition: all 0.3s ease; 
+}
+.hero-btn:hover { background: #fff; color: #0b0f0e; transform: translateY(-3px); }
+
+/* ===== 4. Experience Section ===== */
+.section { padding: 100px 0; }
+.section-kicker { color: #20e3b2; font-weight: 600; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 10px; }
+.section-title { font-weight: 800; font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 30px; }
+
+.exp-card-flat { background: rgba(255, 255, 255, 0.03); padding: 35px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); height: 100%; }
+.exp-card-highlight { background: #0f172a; border: 1px solid rgba(32, 227, 178, 0.2); padding: 35px; border-radius: 20px; height: 100%; transition: border 0.3s ease; }
+.exp-card-highlight:hover { border-color: #20e3b2; }
+.exp-icon-box { background: rgba(32, 227, 178, 0.1); color: #20e3b2; width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 1.6rem; }
+
+/* ===== 5. Green Puzzle Skills ===== */
+.puzzle-piece {
+  background: #20e3b2;
+  color: #0b0f0e;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  position: relative;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(32, 227, 178, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzle-piece::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #20e3b2;
+  border-radius: 50%;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+
+.puzzle-piece::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #121416;
+  border-radius: 50%;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+}
+
+.puzzle-piece:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(32, 227, 178, 0.5);
+  background: #fff;
+}
+
+.puzzle-piece:hover::after { background: #fff; }
+
+/* ===== 6. Education ===== */
+.course-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  border-radius: 18px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.course-card:hover { border-color: #20e3b2; transform: translateY(-5px); }
+.course-label { font-size: 0.65rem; border: 1px solid rgba(32, 227, 178, 0.5); color: #20e3b2; padding: 2px 10px; border-radius: 20px; font-weight: 600; }
+.course-grade { float: right; font-weight: 800; color: #20e3b2; font-size: 1.1rem; }
+
+/* ===== 7. Projects ===== */
+.project-card {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+}
+.project-tag { color: #20e3b2; font-size: 0.75rem; letter-spacing: 1.5px; font-weight: 700; text-transform: uppercase; display: block; }
+.tech-stack .badge { background: rgba(255, 255, 255, 0.1) !important; color: #f5f7fa; margin-right: 5px; }
+
+/* Contact Grid Styles */
+.terminal-icon {
+  background: rgba(32, 227, 178, 0.1);
+  color: #20e3b2;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(32, 227, 178, 0.3);
+  font-size: 1.2rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  color: #f5f7fa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.contact-card i {
+  font-size: 1.4rem;
+}
+
+.contact-card span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-card:hover {
+  background: rgba(32, 227, 178, 0.05);
+  border-color: rgba(32, 227, 178, 0.4);
+  transform: translateY(-3px);
+  color: #20e3b2;
+}
+
+.contact-info-text p {
+  line-height: 1.6;
+}
+
+.contact-sub-text {
+  color: rgba(245, 247, 250, 0.9); /* לבן בהיר וקריא */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+.WHO{
+  font-size: larger;
+}
+/* ===== 9. Responsive ===== */
+@media (max-width: 991.98px) {
+  .hero { text-align: center; }
+  .hero-visual { justify-content: center; margin-top: 40px; }
+  .hero-links { justify-content: center; }
+}
