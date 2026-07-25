@@ -1,325 +1,507 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eldad Simanian | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eldad Simanian | Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <div id="bg"></div>
 
-  <div id="bg"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+      <div class="container py-2 px-lg-4">
+        <a class="navbar-brand fw-semibold" href="#home">Eldad Simanian</a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top ">
-    <div class="container py-2 px-lg-4">
-      <a class="navbar-brand fw-semibold" href="#home">Eldad Simanian</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-        </ul>
-
-        <div class="nav-right d-flex align-items-center gap-3">
-          <a class="nav-icon" href="https://www.linkedin.com/in/eldad-simanian-linkdin/" target="_blank" aria-label="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a class="nav-icon" href="https://github.com/eldadsimanian" target="_blank" aria-label="GitHub">
-            <i class="bi bi-github"></i>
-          </a>
-          <a href="#" class="btn btn-accent px-4 rounded-pill fw-semibold">Case Studies</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container px-lg-4">
-    <section id="home" class="hero">
-      <div class="row align-items-center g-5">
-        <div class="col-12 col-lg-6">
-          <div class="hero-text text-lg-start text-center">
-            <p class="hero-kicker">HI THERE 👋 I’M</p>
-            <h1 class="hero-title">Eldad<br>Simanian</h1>
-            <p class="hero-role">
-              B.Sc. Computer Science Student At HIT<br>
-              Former Intelligence Analyst & Team Leader at Unit 8200
-            </p>
-            <p class="hero-sub">
-              8200 graduate and second-year Computer Science honors student (GPA 99.5) specializing in data systems, statistics, and algorithmic analysis. Active reserve duty personnel blending deep analytical intelligence experience with software engineering excellence.
-            </p>
-            <div class="hero-links">
-              <a class="hero-btn" href="https://www.linkedin.com/in/eldad-simanian-linkdin/" target="_blank">LinkedIn</a>
-              <a class="hero-btn" href="https://github.com/eldadsimanian" target="_blank">GitHub</a>
-              <a class="hero-btn" href="files/Eldad_Simanian_CV.pdf" download>Resume</a>
-              <a class="hero-btn" href="files/Eldad_Simanian_Transcript.pdf" download>Grade sheet</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="hero-visual">
-            <img src="img/main_photo_left.jpg" alt="Eldad-avatar" class="hero-img">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <p class="section-kicker"><i class="bi bi-person-badge"></i> ABOUT & EXPERIENCE</p>
-        <h2 class="section-title mb-5">Analytical thinking shaped by large-scale data and intelligence operations.</h2>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="exp-card-flat">
-              <p class="WHO">I am a second-year Computer Science student at HIT with a GPA of 99.5, specializing in software engineering, data science, and analytical modeling.</p>
-              <p class="WHO">Currently serving in active reserve duty, I bring over 550 days of high-stakes operational experience, combining leadership precision with an innate passion for uncovering meaningful patterns within complex data flows.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="exp-card-highlight">
-              <div class="exp-icon-box mb-3">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h3>Intelligence Analyst & Team Leader</h3>
-              <p class="text-accent">Unit 8200 | IDF</p>
-              <p>Led specialized technical teams focused on complex information analysis and anomaly detection in high-pressure environments. Developed advanced expertise in pattern tracking, logical debugging, and data synthesis to drive mission-critical outcomes.</p>
-            </div>
+          <div class="nav-right d-flex align-items-center gap-3">
+            <a
+              class="nav-icon"
+              href="https://www.linkedin.com/in/eldad-simanian-linkdin/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              class="nav-icon"
+              href="https://github.com/eldadsimanian"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="btn btn-accent px-4 rounded-pill fw-semibold"
+              >Case Studies</a
+            >
           </div>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section id="skills" class="section text-center">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <p class="text-accent mb-5">I see complex datasets as puzzles — and I love engineering real-time solutions for them.</p>
-        <div class="d-flex flex-wrap justify-content-center gap-4 puzzle-container">
-          <div class="puzzle-piece">Information Analysis</div>
-          <div class="puzzle-piece">Data Visualization</div>
-          <div class="puzzle-piece">Anomaly Detection</div>
-          <div class="puzzle-piece">Python (NumPy, Pandas)</div>
-          <div class="puzzle-piece">SQL (Queries & Joins)</div>
-          <div class="puzzle-piece">Team Leadership</div>
-          <div class="puzzle-piece">Probability & Stats</div>
-          <div class="puzzle-piece">Linux & Bash Scripting</div>
-          <div class="puzzle-piece">Networking (TCP/IP, HTTP)</div>
-          <div class="puzzle-piece">Git / GitHub</div>
-          <div class="puzzle-piece">Problem Solving</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <h2 class="section-title text-center">Education</h2>
-        <p class="text-center mb-5">Computer Science B.Sc. | HIT (Honors Student)</p>
-        
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Intro to Data Science</h5>
-              <p>Advanced data analysis, predictive modeling, machine learning algorithms, and hands-on Python engineering (Pandas, NumPy, Scikit-learn).</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Probability and Statistics</h5>
-              <p>Probability spaces, distributions, random variables, limit theorems, statistical inference, and structural data modeling.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Computer Networking</h5>
-              <p>Comprehensive understanding of system layers and architecture, transport protocols (TCP/IP), application layers (HTTP/DNS), and data stream monitoring.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Data Structures</h5>
-              <p>Efficient data management, algorithm complexity evaluation, and optimization of object-oriented structural code architectures.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">92</span>
-              <h5>Algorithms 1</h5>
-              <p>Graph theory, network flows, greedy paradigms, complexity analysis, and complex dynamic programming problems.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Linear Algebra 1 & 2</h5>
-              <p>Matrix operations, multidimensional vector spaces, linear transformations, eigenvalues, and computational transformations.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Discrete Mathematics 1 & 2</h5>
-              <p>Predicate logic, combinatorics, set theory, graph principles, finite-state automata, and structural logical reasoning.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="course-card">
-              <span class="course-label">COURSE</span>
-              <span class="course-grade">100</span>
-              <h5>Object Oriented Programming</h5>
-              <p>Architecting production-ready, scalable software infrastructure using design patterns and strict debugging paradigms.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">Featured Projects</h2>
-        <div class="project-card mb-4">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <span class="project-tag">DATA SCIENCE / AI</span>
-              <h3>Algorithmic Analysis & Machine Learning</h3>
-              <p>Engineered and optimized parametric analysis pipelines using algorithms like KNN, PCA, and Decision Trees to process complex datasets and deliver actionable classification models.</p>
-              <div class="tech-stack mt-2">
-                <span class="badge rounded-pill bg-dark">Python</span>
-                <span class="badge rounded-pill bg-dark">NumPy</span>
-                <span class="badge rounded-pill bg-dark">Pandas</span>
-                <span class="badge rounded-pill bg-dark">Scikit-learn</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="https://github.com/liorma6/Spam-Detection-NLP" target="_blank" class="btn btn-outline-light rounded-pill px-4">View Source</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <span class="project-tag">OPERATING SYSTEMS & NETWORKS</span>
-              <h3>Custom Linux Shell & System Monitor</h3>
-              <p>Developed a functional terminal environment in C utilizing low-level operating system APIs, memory handling, process routing, background queues, and network communication pipelines.</p>
-              <div class="tech-stack mt-2">
-                <span class="badge rounded-pill bg-dark">C</span>
-                <span class="badge rounded-pill bg-dark">Linux API</span>
-                <span class="badge rounded-pill bg-dark">System Monitoring</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="https://github.com/eldadsimanian/computer_network_project" target="_blank" class="btn btn-outline-light rounded-pill px-4">View Source</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
+    <main class="container px-lg-4">
+      <section id="home" class="hero">
         <div class="row align-items-center g-5">
-          <div class="col-lg-5">
-            <div class="contact-info-text">
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <div class="terminal-icon">
-                  <i class="bi bi-terminal"></i>
-                </div>
-                <h3 class="m-0 fw-bold">Eldad Simanian</h3>
-              </div>
-              <p class="text-accent fw-medium">Computer Science Student | Data & Systems Analyst</p>
-              <p class="contact-sub-text mt-3">
-                I am actively seeking student positions in Data Analysis, Fraud Analysis, and Big Data Environments. Let's connect to discuss how I can bring analytical rigor and technical ownership to your team!
+          <div class="col-12 col-lg-6">
+            <div class="hero-text text-lg-start text-center">
+              <p class="hero-kicker">HI THERE 👋 I’M</p>
+              <h1 class="hero-title">Eldad<br />Simanian</h1>
+              <p class="hero-role">
+                B.Sc. Computer Science Student At HIT<br />
+                Former Intelligence Analyst & Team Leader at Unit 8200
               </p>
+              <p class="hero-sub">
+                8200 graduate and second-year Computer Science honors student
+                (GPA 99.5) specializing in data systems, statistics, and
+                algorithmic analysis. Active reserve duty personnel blending
+                deep analytical intelligence experience with software
+                engineering excellence.
+              </p>
+              <div class="hero-links">
+                <a
+                  class="hero-btn"
+                  href="https://www.linkedin.com/in/eldad-simanian-linkdin/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+                <a
+                  class="hero-btn"
+                  href="https://github.com/eldadsimanian"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a class="hero-btn" href="files/Eldad_Simanian_CV.pdf" download
+                  >Resume</a
+                >
+                <a
+                  class="hero-btn"
+                  href="files/Eldad_Simanian_Transcript.pdf"
+                  download
+                  >Grade sheet</a
+                >
+              </div>
             </div>
           </div>
+          <div class="col-12 col-lg-6">
+            <div class="hero-visual">
+              <img
+                src="img/main_photo_left.jpg"
+                alt="Eldad-avatar"
+                class="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <div class="col-lg-7">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <a href="mailto:eldadsimanian@gmail.com" class="contact-card">
-                  <i class="bi bi-envelope text-accent"></i>
-                  <span>eldadsimanian@gmail.com</span>
-                </a>
+      <section id="experience" class="section">
+        <div class="container">
+          <p class="section-kicker">
+            <i class="bi bi-person-badge"></i> ABOUT & EXPERIENCE
+          </p>
+          <h2 class="section-title mb-5">
+            Analytical thinking shaped by large-scale data and intelligence
+            operations.
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="exp-card-flat">
+                <p class="WHO">
+                  I am a second-year Computer Science student at HIT with a GPA
+                  of 99.5, specializing in software engineering, data science,
+                  and analytical modeling.
+                </p>
+                <p class="WHO">
+                  Currently serving in active reserve duty, I bring over 550
+                  days of high-stakes operational experience, combining
+                  leadership precision with an innate passion for uncovering
+                  meaningful patterns within complex data flows.
+                </p>
               </div>
-              <div class="col-md-6">
-                <div class="contact-card">
-                  <i class="bi bi-telephone text-accent"></i>
-                  <span>+972-53-5236063</span>
+            </div>
+            <div class="col-md-6">
+              <div class="exp-card-highlight">
+                <div class="exp-icon-box mb-3">
+                  <i class="bi bi-shield-check"></i>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <a href="https://www.linkedin.com/in/eldad-simanian-linkdin/" target="_blank" class="contact-card">
-                  <i class="bi bi-linkedin text-accent"></i>
-                  <span>LinkedIn Profile</span>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a href="https://github.com/eldadsimanian" target="_blank" class="contact-card">
-                  <i class="bi bi-github text-accent"></i>
-                  <span>GitHub Profile</span>
-                </a>
+                <h3>Intelligence Analyst & Team Leader</h3>
+                <p class="text-accent">Unit 8200 | IDF</p>
+                <p>
+                  Led specialized technical teams focused on complex information
+                  analysis and anomaly detection in high-pressure environments.
+                  Developed advanced expertise in pattern tracking, logical
+                  debugging, and data synthesis to drive mission-critical
+                  outcomes.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+      <section id="skills" class="section text-center">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <p class="text-accent mb-5">
+            I see complex datasets as puzzles — and I love engineering real-time
+            solutions for them.
+          </p>
+          <div
+            class="d-flex flex-wrap justify-content-center gap-4 puzzle-container"
+          >
+            <div class="puzzle-piece">Information Analysis</div>
+            <div class="puzzle-piece">Data Visualization</div>
+            <div class="puzzle-piece">Anomaly Detection</div>
+            <div class="puzzle-piece">Python (NumPy, Pandas)</div>
+            <div class="puzzle-piece">SQL (Queries & Joins)</div>
+            <div class="puzzle-piece">Team Leadership</div>
+            <div class="puzzle-piece">Probability & Stats</div>
+            <div class="puzzle-piece">Linux & Bash Scripting</div>
+            <div class="puzzle-piece">Networking (TCP/IP, HTTP)</div>
+            <div class="puzzle-piece">Git / GitHub</div>
+            <div class="puzzle-piece">Problem Solving</div>
+          </div>
+        </div>
+      </section>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      VANTA.NET({
-        el: "#bg",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x79a29b,
-        backgroundColor: 0x0,
-        points: 20.00,
-        maxDistance: 24.00,
-        spacing: 20.00
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="section-title text-center">Education</h2>
+          <p class="text-center mb-5">
+            Computer Science B.Sc. | HIT (Honors Student)
+          </p>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Intro to Data Science</h5>
+                <p>
+                  Advanced data analysis, predictive modeling, machine learning
+                  algorithms, and hands-on Python engineering (Pandas, NumPy,
+                  Scikit-learn).
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Probability and Statistics</h5>
+                <p>
+                  Probability spaces, distributions, random variables, limit
+                  theorems, statistical inference, and structural data modeling.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Computer Networking</h5>
+                <p>
+                  Comprehensive understanding of system layers and architecture,
+                  transport protocols (TCP/IP), application layers (HTTP/DNS),
+                  and data stream monitoring.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Data Structures</h5>
+                <p>
+                  Efficient data management, algorithm complexity evaluation,
+                  and optimization of object-oriented structural code
+                  architectures.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">92</span>
+                <h5>Algorithms 1</h5>
+                <p>
+                  Graph theory, network flows, greedy paradigms, complexity
+                  analysis, and complex dynamic programming problems.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Linear Algebra 1 & 2</h5>
+                <p>
+                  Matrix operations, multidimensional vector spaces, linear
+                  transformations, eigenvalues, and computational
+                  transformations.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Discrete Mathematics 1 & 2</h5>
+                <p>
+                  Predicate logic, combinatorics, set theory, graph principles,
+                  finite-state automata, and structural logical reasoning.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="course-card">
+                <span class="course-label">COURSE</span>
+                <span class="course-grade">100</span>
+                <h5>Object Oriented Programming</h5>
+                <p>
+                  Architecting production-ready, scalable software
+                  infrastructure using design patterns and strict debugging
+                  paradigms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Featured Projects</h2>
+          <div class="project-card mb-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="project-tag">DATA SCIENCE / AI</span>
+                <h3>Algorithmic Analysis & Machine Learning</h3>
+                <p>
+                  Engineered and optimized parametric analysis pipelines using
+                  algorithms like KNN, PCA, and Decision Trees to process
+                  complex datasets and deliver actionable classification models.
+                </p>
+                <div class="tech-stack mt-2">
+                  <span class="badge rounded-pill bg-dark">Python</span>
+                  <span class="badge rounded-pill bg-dark">NumPy</span>
+                  <span class="badge rounded-pill bg-dark">Pandas</span>
+                  <span class="badge rounded-pill bg-dark">Scikit-learn</span>
+                </div>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a
+                  href="https://github.com/liorma6/Spam-Detection-NLP"
+                  target="_blank"
+                  class="btn btn-outline-light rounded-pill px-4"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="project-tag">OPERATING SYSTEMS & NETWORKS</span>
+                <h3>Custom Linux Shell & System Monitor</h3>
+                <p>
+                  Developed a functional terminal environment in C utilizing
+                  low-level operating system APIs, memory handling, process
+                  routing, background queues, and network communication
+                  pipelines.
+                </p>
+                <div class="tech-stack mt-2">
+                  <span class="badge rounded-pill bg-dark">C</span>
+                  <span class="badge rounded-pill bg-dark">Linux API</span>
+                  <span class="badge rounded-pill bg-dark"
+                    >System Monitoring</span
+                  >
+                </div>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a
+                  href="https://github.com/eldadsimanian/computer_network_project"
+                  target="_blank"
+                  class="btn btn-outline-light rounded-pill px-4"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card mb-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="project-tag">CYBERSECURITY & DATA ANALYTICS</span>
+                <h3>Cyber Threat Sentinel – Real-Time Anomaly Detection</h3>
+                <p>
+                  Developed an automated cyber threat detection system designed
+                  to monitor network traffic, identify security anomalies, and
+                  analyze threat patterns in real time.
+                </p>
+                <div class="tech-stack mt-2">
+                  <span class="badge rounded-pill bg-dark">Python</span>
+                  <span class="badge rounded-pill bg-dark">Data Analytics</span>
+                  <span class="badge rounded-pill bg-dark">Cybersecurity</span>
+                  <span class="badge rounded-pill bg-dark"
+                    >Anomaly Detection</span
+                  >
+                </div>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a
+                  href="https://github.com/eldadsimanian/cyber_threat_sentinel"
+                  target="_blank"
+                  class="btn btn-outline-light rounded-pill px-4"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+              <div class="contact-info-text">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="terminal-icon">
+                    <i class="bi bi-terminal"></i>
+                  </div>
+                  <h3 class="m-0 fw-bold">Eldad Simanian</h3>
+                </div>
+                <p class="text-accent fw-medium">
+                  Computer Science Student | Data & Systems Analyst
+                </p>
+                <p class="contact-sub-text mt-3">
+                  I am actively seeking student positions in Data Analysis,
+                  Fraud Analysis, and Big Data Environments. Let's connect to
+                  discuss how I can bring analytical rigor and technical
+                  ownership to your team!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <a href="mailto:eldadsimanian@gmail.com" class="contact-card">
+                    <i class="bi bi-envelope text-accent"></i>
+                    <span>eldadsimanian@gmail.com</span>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <div class="contact-card">
+                    <i class="bi bi-telephone text-accent"></i>
+                    <span>+972-53-5236063</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <a
+                    href="https://www.linkedin.com/in/eldad-simanian-linkdin/"
+                    target="_blank"
+                    class="contact-card"
+                  >
+                    <i class="bi bi-linkedin text-accent"></i>
+                    <span>LinkedIn Profile</span>
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a
+                    href="https://github.com/eldadsimanian"
+                    target="_blank"
+                    class="contact-card"
+                  >
+                    <i class="bi bi-github text-accent"></i>
+                    <span>GitHub Profile</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        VANTA.NET({
+          el: "#bg",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x79a29b,
+          backgroundColor: 0x0,
+          points: 20.0,
+          maxDistance: 24.0,
+          spacing: 20.0,
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
